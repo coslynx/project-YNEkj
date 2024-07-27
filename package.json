@@ -1,0 +1,43 @@
+{
+  "name": "harmony-music-bot",
+  "version": "1.0.0",
+  "description": "A Discord music bot that plays music from YouTube and Spotify.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "build": "tsc && tsc-watch --onSuccess \"npm run build:prod\"",
+    "build:prod": "tsc --module commonjs --outDir dist",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/harmony-music-bot.git"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/your-username/harmony-music-bot/issues"
+  },
+  "homepage": "https://github.com/your-username/harmony-music-bot#readme",
+  "dependencies": {
+    "@discordjs/voice": "^0.14.0",
+    "discord.js": "^14.10.0",
+    "dotenv": "^16.0.3",
+    "genius-lyrics": "^2.0.1",
+    "googleapis": "^87.0.0",
+    "spotify-web-api-node": "^5.0.2",
+    "ytdl-core": "^4.10.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.8",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}
